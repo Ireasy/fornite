@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Fortnite
+  p Welcome to Fortnite
+  p Hallo Tim
+  
+  ul
+    each freund in freunde
+      li
+        a(href='freunde/' + freund)= freund
