@@ -30,9 +30,11 @@ function timeCount() {
   var second = today.getSeconds();
   if(second<10)second = "0"+second;
 
-  TimeZone timeZone = TimeZone.getDefault();
+  Calendar calendar = new GregorianCalendar();
+TimeZone timeZone = calendar.getTimeZone();
 
-TimeZone timeZone = TimeZone.getTimeZone("Europe/Germany");
+
+
 
   return day+"/"+month+"/"+year+" |"+hour+":"+minute+":"+second;
 
