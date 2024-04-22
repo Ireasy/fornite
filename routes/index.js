@@ -7,8 +7,15 @@ router.get('/', function(req, res, next) {
   const freunde = req.app.get('database').getFreunde();
 
   res.render('index', {
-     freunde: freunde
+     freunde: freunde,
+     zeit:timeCount()
   });
 });
 
 module.exports = router;
+function timeCount() {
+  var today = new Date();
+  return today.toLocaleString('de-DE', { timeZone : 'Europe/Berlin'});
+
+  
+}
