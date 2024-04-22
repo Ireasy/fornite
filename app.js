@@ -3,15 +3,22 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+require('dotenv').config()
+
 
 var indexRouter = require('./routes/index');
 var freundeRouter = require('./routes/freunde');
+
+var database = require('./services/database');
+var fortniteapi = require('./services/fortniteapi');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+app.set('database', database);
+app.set('fortniteapi', fortniteapi);
 
 app.use(logger('dev'));
 app.use(express.json());

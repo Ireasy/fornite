@@ -8,4 +8,4 @@ block content
   ul
     each freund in freunde
       li
-        a(href='freunde/' + freund)= freund
+        a(href='freunde/' + freund.account)= freund.name
