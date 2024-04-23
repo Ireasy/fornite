@@ -14,6 +14,9 @@ var database = {
                     account: row[0],
                     name: row[1],
                     team: row[2],
+                    birthday: row[4],
+                    country: row[3],
+
                 };
             }
         );
