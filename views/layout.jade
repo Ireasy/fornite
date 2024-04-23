@@ -2,15 +2,18 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/reset.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    table 
-  caption 
-  thead 
-  tr 
-  th 
+    div(class="header")
+     a(href="/")
+      h1 Friendsettings
+     ul(class="menu")
+      li
+        a(href="/aboutme") About Me
   
-  block content
+    div(class="content")
+      block content
   
 
   

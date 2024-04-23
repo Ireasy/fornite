@@ -8,9 +8,11 @@ require('dotenv').config()
 
 var indexRouter = require('./routes/index');
 var freundeRouter = require('./routes/freunde');
+var aboutmeRouter = require('./routes/aboutme');
 
 var database = require('./services/database');
 var fortniteapi = require('./services/fortniteapi');
+var time = require('./services/time');
 
 var app = express();
 
@@ -19,6 +21,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.set('database', database);
 app.set('fortniteapi', fortniteapi);
+app.set('time', time);
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -28,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/freunde', freundeRouter);
+app.use('/aboutme', aboutmeRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

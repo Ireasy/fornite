@@ -1,8 +1,104 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+div.header {
+  display: flex;
+  background-color: red;  
+}
+
+div.header a {
+  text-decoration: none;
+}
+
+div.header h1 {
+  color: white;  
+  font-size: 40px;
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+
+div.header ul.menu {
+  padding-left: 20px;
+  padding-top: 19px;  
+  font-size: 20px;
+}
+
+div.header ul.menu a {
+  color: black;
+}
+
+div.content {
+  padding: 40px;
+}
+
+div.content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+div.content a {
   color: #00B7FF;
+}
+
+div.content ul.freundeliste {
+  display: flex;  
+  margin-top: 20px;
+}
+
+div.content ul.freundeliste li {
+  border-radius: 20px;
+  padding: 20px;
+  width: 100px;
+  height: 120px;
+  margin-right: 10px;
+  border: 1px solid grey;
+}
+
+div.content ul.freundeliste img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+div.content ul.freundeliste a {
+  text-decoration: none;
+}
+
+div.content img.spieler {
+  margin: 20px 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+div.content table {
+  width: 500px;
+}
+
+div.content table th, div.content table td {
+  padding: 10px;
+  text-align: left;
+}
+
+div.content table th {
+  width: 150px;
+  font-weight: bold;
+  color: #BBBBBB;
+}
+
+div.content table tr {
+  border-top: 1px solid lightgray;
+}
+
+div.content pre {
+  margin-top: 100px;
+  width: 500px;
+  overflow: scroll;
+  height: 300px;
+  color: gray;
+  background-color: lightgray;
+  display: none;
 }

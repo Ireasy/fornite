@@ -1,11 +1,12 @@
 extends layout
 
 block content
-  h1 Friendsettings
-  p Welcome to Fortnite
-  p Hallo Tim #{zeit}
+  h2 Welcome to Friendsettings!
+  p  Here is where I show the Fortnite stats of my friends as of #{zeit}.
   
-  ul
+  ul(class="freundeliste")
     each freund in freunde
       li
+        a(href='freunde/' + freund.account)
+          img(src='/images/' + freund.account + '.png' alt=freund.name)
         a(href='freunde/' + freund.account)= freund.name

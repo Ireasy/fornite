@@ -1,10 +1,36 @@
 extends layout
 
 block content
-  h1 Fortnite
-  p Welcome to #{freund.name}
-  - if (statistik.global_stats)
-   p Kills: #{statistik.global_stats.duo.kills}
+  h2 Stats for #{freund.name}
+  p This are the statistics for #{freund.name} as of #{zeit}
 
-  a(href='../') Zurück
+  img(class="spieler" src='/images/' + freund.account + '.png' alt=freund.name)
+
+  table
+    tbody
+      tr
+        th Name
+        td= freund.name
+    
+      tr
+        th Team
+        td= freund.team
+    
+      tr
+        th Kills (Duo)
+        td
+          - if (statistik.global_stats && statistik.global_stats.duo)
+            = statistik.global_stats.duo.kills
+      
+      tr
+        th Kills (Solo)
+        td
+          - if (statistik.global_stats && statistik.global_stats.solo)
+            = statistik.global_stats.solo.kills
+
+  pre
+    = JSON.stringify(freund, null, 2)
+    br
+    = JSON.stringify(statistik, null, 2)
+
   

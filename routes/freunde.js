@@ -13,7 +13,8 @@ router.get('/:account', async function(req, res, next) {
 
   res.render('freund', {
     freund: freund,
-    statistik: statistik
+    statistik: statistik,
+    zeit: req.app.get('time').timeCount()
   })
 });
 
