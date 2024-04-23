@@ -9,6 +9,7 @@ router.get('/:account', async function(req, res, next) {
   }
 
   var statistik = await req.app.get('fortniteapi').getStatistik(req.params.account);
+  console.log(statistik);
 
   res.render('freund', {
     freund: freund,
