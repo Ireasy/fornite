@@ -4,7 +4,8 @@ block content
   h2 Stats for #{freund.name}
   p This are the statistics for #{freund.name} as of #{zeit}
 
-  img(class="spieler" src='/images/' + freund.account + '.png' alt=freund.name)
+  div(class="spieler-bild-auf-freundeseite")
+  include ./_image.jade
 
   table
     tbody
