@@ -46,13 +46,13 @@ div.content ul.freundeliste {
   margin-top: 20px;
 }
 
-div.content ul.freundeliste li {
+div.content ul.freundeliste li.freund {
   border-radius: 20px;
   padding: 20px;
   width: 100px;
-  height: 120px;
   margin-right: 10px;
   border: 1px solid grey;
+  text-align: center;
 }
 
 div.content ul.freundeliste img {
@@ -66,16 +66,33 @@ div.content ul.freundeliste a {
   text-decoration: none;
 }
 
-div.content img.spieler {
+div.content div.spieler-bild-auf-freundeseite {
   margin: 20px 0;
+}
+
+div.content div.spieler-bild img.spieler {  
   width: 100px;
   height: 100px;
   border-radius: 15px;
   border: 1px solid gray;
 }
 
+div.content div.spieler-bild ul.spiele {  
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+div.content div.spieler-bild ul.spiele img {
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+}
+
 div.content table {
   width: 500px;
+  margin-top: 20px;
 }
 
 div.content table th, div.content table td {
@@ -101,4 +118,9 @@ div.content pre {
   color: gray;
   background-color: lightgray;
   display: none;
+}
+
+div.content h3 {
+  font-weight: bold;
+  margin-top: 20px;
 }

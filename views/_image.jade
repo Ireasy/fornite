@@ -1,0 +1,7 @@
+div(class="spieler-bild")
+  img(class="spieler" src='/images/' + freund.account + '.png' alt=freund.name)
+
+  ul(class="spiele")
+    each game in freund.games
+      li
+        img(class="game" src="/images/games/" + game + ".png" alt=game)
