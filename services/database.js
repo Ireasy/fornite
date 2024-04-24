@@ -19,6 +19,9 @@ var database = {
                     games: _.split(row[5], ','),
                     Keyboard: row[6],
                     KeyboardLink: row[7],
+                    KeyboardPicture: row[8],
+                    Mouse: row[9],
+                    MouseLink: row[10],
                 };
             }
         );

@@ -46,7 +46,16 @@ block content
         td
           a(href=freund.KeyboardLink)
             = freund.Keyboard
-            img(src='' width=30)
+            img(src=freund.KeyboardPicture width=30)
+
+            tr 
+               th Mouse 
+               td
+                 a(href=freund.MouseLink)
+                   = freund.Mouse
+                   img(src= width=30)
+
+               
 
   pre
     = JSON.stringify(freund, null, 2)
