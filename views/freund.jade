@@ -44,10 +44,9 @@ block content
       tr
         th Keyboard
         td
-          a(href='')
-             = freund.Keyboard
-               =  freund.links 
-               img(src='' width=30)
+          a(href=freund.KeyboardLink)
+            = freund.Keyboard
+            img(src='' width=30)
 
   pre
     = JSON.stringify(freund, null, 2)

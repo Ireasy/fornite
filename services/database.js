@@ -18,7 +18,7 @@ var database = {
                     birthday: row[4],
                     games: _.split(row[5], ','),
                     Keyboard: row[6],
-                    links: row[7],
+                    KeyboardLink: row[7],
                 };
             }
         );
