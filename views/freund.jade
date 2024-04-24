@@ -43,7 +43,10 @@ block content
     tbody
       tr
         th Keyboard
-        td= freund.name
+        td
+          a(href='https://www.amazon.de/RedThunder-Metallplatte-Handballenauflager%EF%BC%8CRGB-Hintergrundbeleuchtung-Gaming-Tastatur-Ergonomische/dp/B09NB9DGWT/ref=sr_1_2_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1D1WWY00DR2LE&dib=eyJ2IjoiMSJ9.1fmpAW0JTLF3dliVtfyEFyc16kiDnObZj6k153kXWwVzN9akw1ebwrMpbe4hv2NVRFhsrYRm4j1KHwRApnJoBq0Oj7LdNHUc5f7XT2nkKCzm5iXgq_ObpOHi-UaocT5kC8OaSbc9gUHP8-I5soLtQyX383ABDqeNjUksFZa4s029VwA-Xk-MUNduSu6Ep3bRduDfkTRFhOwIkf9ulkIWkNxzWdUPUl-uNXIMrsvxwxY.ldCBX_aaI-EqEU1Ke3GY6oCpehasjeqC6LTiVStBAsI&dib_tag=se&keywords=gaming+tastatur&qid=1713943346&sprefix=gaming+tastatur%2Caps%2C103&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1')
+            = freund.name 
+            img(src='https://m.media-amazon.com/images/I/711w0e2fqGL._AC_SX679_.jpg' width=30)
 
   pre
     = JSON.stringify(freund, null, 2)
