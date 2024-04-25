@@ -22,6 +22,10 @@ var database = {
                     KeyboardPicture: row[8],
                     Mouse: row[9],
                     MouseLink: row[10],
+                    MousePicture: row[11],
+                    Headset: row[12],
+                    HeadsetLink: row[13],
+                    HeadsetPicture: row[14],
                 };
             }
         );
