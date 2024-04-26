@@ -26,6 +26,9 @@ var database = {
                     Headset: row[12],
                     HeadsetLink: row[13],
                     HeadsetPicture: row[14],
+                    Mousepad: row[15],
+                    MousepadLink: row[16],
+                    MousepadPicture: row[17],
                 };
             }
         );
