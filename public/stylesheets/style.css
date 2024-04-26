@@ -22,6 +22,12 @@ div.header ul.menu {
   padding-left: 20px;
   padding-top: 19px;  
   font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.header ul.menu li {
+  margin-right: 20px;
 }
 
 div.header ul.menu a {
@@ -42,8 +48,10 @@ div.content a {
 }
 
 div.content ul.freundeliste {
-  display: flex;  
+  display: flex; 
+  flex-wrap: wrap; 
   margin-top: 20px;
+  width: 800px;
 }
 
 div.content ul.freundeliste li.freund {
@@ -51,6 +59,7 @@ div.content ul.freundeliste li.freund {
   padding: 20px;
   width: 100px;
   margin-right: 10px;
+  margin-bottom: 10px;
   border: 1px solid grey;
   text-align: center;
 }

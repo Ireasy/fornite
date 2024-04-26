@@ -9,6 +9,7 @@ require('dotenv').config()
 var indexRouter = require('./routes/index');
 var freundeRouter = require('./routes/freunde');
 var aboutmeRouter = require('./routes/aboutme');
+var bestgearRouter = require('./routes/bestgear');
 
 var database = require('./services/database');
 var fortniteapi = require('./services/fortniteapi');
@@ -32,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/freunde', freundeRouter);
 app.use('/aboutme', aboutmeRouter);
+app.use('/bestgear', bestgearRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
